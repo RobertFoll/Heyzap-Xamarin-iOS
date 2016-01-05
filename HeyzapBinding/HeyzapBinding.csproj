@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{7C4F490E-2C1C-4B6B-95E0-F51B9A704508}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HeyzapBinding</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>HeyzapBinding</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Sdks\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sdks\AdColony.linkwith.cs">
+      <DependentUpon>AdColony.a</DependentUpon>
+    </Compile>
+    <Compile Include="Sdks\Chartboost.linkwith.cs">
+      <DependentUpon>Chartboost.a</DependentUpon>
+    </Compile>
+    <Compile Include="Sdks\AppLovinSdk.linkwith.cs">
+      <DependentUpon>AppLovinSdk.a</DependentUpon>
+    </Compile>
+    <Compile Include="Sdks\FBAudienceNetwork.linkwith.cs">
+      <DependentUpon>FBAudienceNetwork.a</DependentUpon>
+    </Compile>
+    <Compile Include="Sdks\GoogleMobileAds.linkwith.cs">
+      <DependentUpon>GoogleMobileAds.a</DependentUpon>
+    </Compile>
+    <Compile Include="Sdks\HyprMX.linkwith.cs">
+      <DependentUpon>HyprMX.a</DependentUpon>
+    </Compile>
+    <Compile Include="Sdks\AppTracker.linkwith.cs">
+      <DependentUpon>AppTracker.a</DependentUpon>
+    </Compile>
+    <Compile Include="Sdks\UnityAds.linkwith.cs">
+      <DependentUpon>UnityAds.a</DependentUpon>
+    </Compile>
+    <Compile Include="Sdks\VungleSDK.linkwith.cs">
+      <DependentUpon>VungleSDK.a</DependentUpon>
+    </Compile>
+    <Compile Include="Sdks\InMobi-5.1.1.linkwith.cs">
+      <DependentUpon>InMobi-5.1.1.a</DependentUpon>
+    </Compile>
+    <Compile Include="HeyzapAds.linkwith.cs">
+      <DependentUpon>HeyzapAds.a</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="Sdks\AdColony.a" />
+    <ObjcBindingNativeLibrary Include="Sdks\Chartboost.a" />
+    <ObjcBindingNativeLibrary Include="Sdks\AppLovinSdk.a" />
+    <ObjcBindingNativeLibrary Include="Sdks\FBAudienceNetwork.a" />
+    <ObjcBindingNativeLibrary Include="Sdks\GoogleMobileAds.a" />
+    <ObjcBindingNativeLibrary Include="Sdks\HyprMX.a" />
+    <ObjcBindingNativeLibrary Include="Sdks\AppTracker.a" />
+    <ObjcBindingNativeLibrary Include="Sdks\UnityAds.a" />
+    <ObjcBindingNativeLibrary Include="Sdks\VungleSDK.a" />
+    <ObjcBindingNativeLibrary Include="Sdks\InMobi-5.1.1.a" />
+    <ObjcBindingNativeLibrary Include="HeyzapAds.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.md" />
+  </ItemGroup>
+</Project>
