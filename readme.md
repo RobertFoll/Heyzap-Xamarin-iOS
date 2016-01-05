@@ -1,4 +1,6 @@
 A Xamarin wrapper for the Heyzap iOS SDK
+
+
 A sample project is included. For the technical specifications and documentation of the SDK, see http://www.heyzap.com
 
 This is my personal project, I'm not affiliated with Heyzap in any way. I appreciate all your input, feedback, and especially contributions! The binding was built using Xamarin.iOS as a Unified API iOS Binding Project using Heyzap iOS SDK version 9.3.4.
