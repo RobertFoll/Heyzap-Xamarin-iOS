@@ -2,6 +2,7 @@
 
 You will need to download & copy the following SDKs from the appropriate ad networks into the Heyzap binding project and set their build action to native library:
 
+	HeyzapAds.a - Pay attention to the linkwith.cs file
 	adColony.a
 	AppLovinSdk.a
 	AppTracker.a
