@@ -1,6 +1,6 @@
 ﻿Notes:
 
-Copy & rename the following SDKs to the Heyzap binding project and set their build action to native library:
+You will need to download and & rename the following SDKs to the Heyzap binding project and set their build action to native library:
 
 	adColony.a
 	AppLovinSdk.a
