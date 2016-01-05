@@ -1,6 +1,6 @@
 ﻿Notes:
 
-You will need to download & copy the following SDKs to the Heyzap binding project and set their build action to native library:
+You will need to download & copy the following SDKs from the appropriate ad networks into the Heyzap binding project and set their build action to native library:
 
 	adColony.a
 	AppLovinSdk.a
