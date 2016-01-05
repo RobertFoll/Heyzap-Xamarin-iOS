@@ -3,7 +3,8 @@ A sample project is included. For the technical specifications and documentation
 
 This is my personal project, I'm not affiliated with Heyzap in any way. I appreciate all your input, feedback, and especially contributions! The binding was built using Xamarin.iOS as a Unified API iOS Binding Project using Heyzap iOS SDK version 9.3.4.
 
-Instructions
+Instructions:
+
 Obtain a publisherID at heyzap.com.
 Follow the instructions in the readme files for both the binding and sample projects.  
 
