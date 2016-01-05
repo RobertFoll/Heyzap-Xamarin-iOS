@@ -7,7 +7,7 @@ This is my personal project, I'm not affiliated with Heyzap in any way. I apprec
 
 Instructions:
 
-Obtain a publisherID at heyzap.com.
+Obtain a publisher ID at heyzap.com.
 Follow the instructions in the readme files for both the binding and sample projects.  
 
 License
